@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACIO Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background-color: #000000;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo h1 {
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #00E676;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .form-group input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .checkbox-group label {
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 15px;
+            background: #00E676;
+            border: none;
+            border-radius: 8px;
+            color: #000000;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .forgot-password a {
+            color: #00E676;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .signup-link {
+            text-align: center;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .signup-link a {
+            color: #00E676;
+            text-decoration: none;
+        }
+
+         
+         @media screen and (max-width: 480px) {
+                .container {
+                    width: 90%;
+                    padding: 15px;
+                }
+
+                .logo h1 {
+                    font-size: 2rem;
+                }
+
+                .form-group input {
+                    font-size: 14px;
+                    padding: 12px;
+                }
+
+                .login-btn {
+                    font-size: 14px;
+                    padding: 12px;
+                }
+
+                .forgot-password a,
+                .signup-link {
+                    font-size: 12px;
+                }
+            }
+
+            @media screen and (max-width: 320px) {
+                .container {
+                    width: 95%;
+                    padding: 10px;
+                }
+
+                .logo h1 {
+                    font-size: 1.8rem;
+                }
+
+                .form-group input {
+                    padding: 10px;
+                }
+
+                .checkbox-group label {
+                    font-size: 12px;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>FACI<span>O</span></h1>
+        </div>
+        
+        <form>
+            <div class="form-group">
+                <input type="email" placeholder="jaaaiiidaaan@gmail.com" autocomplete="email">
+            </div>
+            
+            <div class="form-group">
+                <input type="password" placeholder="••••••••" autocomplete="current-password">
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="keep-logged">
+                <label for="keep-logged">Keep me logged in.</label>
+            </div>
+            
+            <button type="submit" class="login-btn">LOGIN</button>
+            
+            <div class="forgot-password">
+                <a href="#">Forgot password? Recover here</a>
+                
+            </div>
+            
+
+           
